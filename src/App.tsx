@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, BrowserRouter } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -31,23 +31,19 @@ function AppLayout() {
 
 export default function App() {
   return (
-    <>
-      <BrowserRouter basename="/korjic">
-        <Routes>
-          <Route element={<AppLayout />}>
-            <Route index element={<HomePage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="cart" element={<CartPage />} />
-            <Route path="catalog" element={<CatalogPage />} />
-            <Route path="catalog/:productId" element={<ProductPage />} />
-            <Route path="checkout" element={<CheckoutPage />} />
-            <Route path="checkout/success" element={<CheckoutSuccessPage />} />
-            <Route path="contact" element={<ContactPage />} />
-            <Route path="events" element={<EventsPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+    <Routes>
+      <Route element={<AppLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="cart" element={<CartPage />} />
+        <Route path="catalog" element={<CatalogPage />} />
+        <Route path="catalog/:productId" element={<ProductPage />} />
+        <Route path="checkout" element={<CheckoutPage />} />
+        <Route path="checkout/success" element={<CheckoutSuccessPage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="events" element={<EventsPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    </Routes>
   );
 }

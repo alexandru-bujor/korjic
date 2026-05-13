@@ -10,12 +10,13 @@ import App from "./App";
 import { CartProvider } from "./lib/cart-context";
 
 const queryClient = new QueryClient();
+const routerBasename = "/korjic";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
       <CartProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={routerBasename}>
           <App />
         </BrowserRouter>
       </CartProvider>
