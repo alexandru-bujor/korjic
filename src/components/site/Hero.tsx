@@ -34,6 +34,18 @@ export function Hero() {
             nunți, botezuri și evenimente corporate.
           </p>
 
+          {/* Image — mobile only, between text and buttons */}
+          <div className="lg:hidden mt-8 relative animate-float-slow">
+            <div className="absolute -inset-8 bg-gradient-gold opacity-20 blur-3xl rounded-full" />
+            <img
+              src={hero}
+              alt="Tort premium Korjic cu foiță de aur și flori naturale"
+              width={1536}
+              height={1536}
+              className="relative w-full rounded-[2rem] shadow-elegant object-cover aspect-[4/5]"
+            />
+          </div>
+
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to="/catalog"
@@ -41,6 +53,7 @@ export function Hero() {
             >
               Vezi catalogul
             </Link>
+
             <a
               href={WHATSAPP}
               target="_blank"
@@ -64,7 +77,8 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="lg:col-span-6 relative">
+        {/* Image — desktop only */}
+        <div className="hidden lg:block lg:col-span-6 relative">
           <div className="relative animate-float-slow">
             <div className="absolute -inset-8 bg-gradient-gold opacity-20 blur-3xl rounded-full" />
             <img
