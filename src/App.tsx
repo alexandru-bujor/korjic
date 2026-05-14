@@ -1,5 +1,3 @@
-import { Routes, Route, Outlet } from "react-router-dom";
-
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { MobileBottomBar, FloatingWhatsApp } from "@/components/site/MobileExtras";
@@ -15,9 +13,21 @@ import ContactPage from "@/pages/ContactPage";
 import EventsPage from "@/pages/EventsPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 
+import { Routes, Route, Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
 function AppLayout() {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
+      <ScrollToTop />
       <Header />
       <main className="flex-1 pb-24 lg:pb-0">
         <Outlet />
