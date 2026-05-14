@@ -55,12 +55,12 @@ export function Hero() {
             </Link>
 
             <a
-              href={WHATSAPP}
+              href="tel:+37300000000"
               target="_blank"
               rel="noreferrer"
               className="flex-1 inline-flex items-center justify-center rounded-full bg-card border border-border text-foreground px-4 py-2.5 text-xs lg:px-7 lg:py-3.5 lg:text-sm font-medium hover:border-caramel hover:text-caramel transition"
             >
-              Comandă pe WhatsApp
+              Sună acum
             </a>
           </div>
 
