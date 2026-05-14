@@ -64,14 +64,14 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-1">
             {badges.map((b) => (
               <div
                 key={b.label}
-                className="flex items-center gap-2.5 rounded-2xl border border-border/70 bg-card/60 backdrop-blur px-3.5 py-3"
+                className="flex items-center gap-1.5 rounded-2xl border border-border/70 bg-card/60 backdrop-blur px-3.5 py-3"
               >
                 <b.icon className="w-4 h-4 text-caramel shrink-0" />
-                <span className="text-xs leading-tight text-foreground/80">{b.label}</span>
+                <span className="text-[0.65rem] leading-tight text-foreground/80">{b.label}</span>
               </div>
             ))}
           </div>
