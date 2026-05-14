@@ -35,7 +35,7 @@ export function Hero() {
           </p>
 
           {/* Image — mobile only, between text and buttons */}
-          <div className="lg:hidden mt-8 relative animate-float-slow">
+          <div className="lg:hidden mt-8 relative ">
             <div className="absolute -inset-8 bg-gradient-gold opacity-20 blur-3xl rounded-full" />
             <img
               src={hero}
