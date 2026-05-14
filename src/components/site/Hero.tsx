@@ -46,10 +46,10 @@ export function Hero() {
             />
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex gap-2">
             <Link
               to="/catalog"
-              className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground px-7 py-3.5 text-sm font-medium hover:bg-primary/90 transition shadow-soft"
+              className="flex-1 inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground px-4 py-2.5 text-xs lg:px-7 lg:py-3.5 lg:text-sm font-medium hover:bg-primary/90 transition shadow-soft"
             >
               Vezi catalogul
             </Link>
@@ -58,7 +58,7 @@ export function Hero() {
               href={WHATSAPP}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-card border border-border text-foreground px-7 py-3.5 text-sm font-medium hover:border-caramel hover:text-caramel transition"
+              className="flex-1 inline-flex items-center justify-center rounded-full bg-card border border-border text-foreground px-4 py-2.5 text-xs lg:px-7 lg:py-3.5 lg:text-sm font-medium hover:border-caramel hover:text-caramel transition"
             >
               Comandă pe WhatsApp
             </a>
